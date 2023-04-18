@@ -1,0 +1,8 @@
+pyotp
+Flask
+flask_login
+flask_session
+Werkzeug
+itsdangerous
+Jinja2
+flask_sqlalchemy

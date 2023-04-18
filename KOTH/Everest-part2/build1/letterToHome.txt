@@ -1,0 +1,11 @@
+Hey mom,
+
+I hope you are well.
+
+I wanted to share this exciting news with you: https://www.redbull.com/us-en/worlds-best-mountaineers
+
+I am on top!
+
+If theres any issues accessing the article it might be password protected with my password: 1mountain2love
+
+P.S. A little birdy told me this server might be compromised (CVE-2022-22965) Keep your eyes peeled. The attackers seem to like https://github.com/jayaram-yalla/CVE-2022-22965

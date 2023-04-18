@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% autoescape false %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SummitWorks Feedback ~ Under Construction</title>
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header>
+      <h1>SummitWorks Feedback Portal ~ Under Construction</h1>
+      <p>Post Feedback Below!</p>
+    </header>
+
+    <!-- Comments -->
+    <h3>Showing all comments:</h3>
+    {% for comment in comments %}
+      <div>
+        <p>{{ comment }}</p>
+      </div>
+    {% endfor %}
+
+    <!-- Write form -->
+    <form action="/welcome" method="POST">
+      <input type="text" name="comment" 
+             placeholder="Comment" autocomplete="off" />
+      <input type="submit" value="Submit new comment" />
+    </form>
+
+    <form action="/welcome" method="POST">
+      <input type="submit" name="action" value="Clear Feed" />
+    </form>
+
+  </body>
+</html>
+{% endautoescape %}

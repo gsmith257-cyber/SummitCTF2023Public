@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  kothbox:
+    user: root
+    build: .
+    ports:
+      - "22:22"
+      - "80:80"
+      - "8081:8081"
+      - "3306:3306"
+      - "31337:31337"
+    environment:
+      - DEBIAN_FRONTEND=noninteractive
+    restart: always 

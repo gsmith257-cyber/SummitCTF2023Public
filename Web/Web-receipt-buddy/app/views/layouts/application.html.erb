@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ReceiptBuddy</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= javascript_pack_tag 'receipt-bundle' %>
+    <%= stylesheet_pack_tag 'receipt-bundle' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

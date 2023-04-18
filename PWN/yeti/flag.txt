@@ -1,0 +1,2 @@
+SummitCTF{1337_h4x0r_1n_7h3_m4k1ng}
+Original challenge: https://github.com/tj-oconnor/cyber-open-2022/tree/main/pwn/medal

@@ -1,0 +1,6 @@
+version: '2'
+services:
+  web:
+    image: registry.ctfd.io/summit/web-cream-of-the-crop
+    ports:
+      - "80:80"

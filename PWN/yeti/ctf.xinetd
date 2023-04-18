@@ -1,0 +1,17 @@
+service ctf
+{
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = challuser
+    bind        = 0.0.0.0
+    server      = /app/yeti
+    port        = 31337
+    type        = UNLISTED
+
+    # Do not have more than X instances at the same time
+    per_source  = 15 # the maximum instances of this service per source IP address
+    rlimit_cpu  = 15 # the maximum number of CPU seconds that the service may use
+    banner_fail = /app/challenge_failure.txt
+
+}
